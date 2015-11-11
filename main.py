@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf-8')
 
 table = DBF(sys.argv[1])
 b = open(sys.argv[2],'w')
-writer = csv.writer(b)
+writer = csv.writer(b,delimiter='|')
 print "Mulai.. sabar mang......"
 writer.writerow(table.field_names)
 i=0
